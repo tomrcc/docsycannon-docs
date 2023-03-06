@@ -1,6 +1,6 @@
 # DocsyCannon
 
-[DocsyCannon][] is a [Hugo theme module][] for technical documentation sites, providing easysite navigation, structure, and more. This template's aim is to get you started writing documentation using the [Docsy][] theme hugo module with [CloudCannon's CMS][]. Use this project as a template and edit it with your own content.
+[DocsyCannon][] is a [Hugo theme module][] for technical documentation sites, providing easysite navigation, structure, and more. This template's aim is to get you started writing documentation using the [Docsy][] theme hugo module with [CloudCannon's CMS][]. Use the Content Management System to fill out the template with your own content, without having to touch any code. If you have experience with Hugo development and CloudCannon, you also have the ability to customize your own page building experience even further.
 
 ## Using DocsyCannon as a template
 
@@ -13,6 +13,10 @@ A simple way to get started is to use this project as a template, which gives yo
 3. [Sign up][] for CloudCannon using their free trial period.
 
 4. [Build your site][].
+
+## Making changes to the site
+
+Using CloudCannon's CMS
 
 ## Running the website locally
 
