@@ -1,38 +1,24 @@
 ---
 _schema: index
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: Getting Started
+linkTitle: Getting Started
 weight: 2
-categories: ["Examples", "Placeholders"]
-tags: ["test","docs"] 
-description: >
+categories:
+  - Examples
+  - Placeholders
+tags:
+  - test
+  - docs
+description: |
   What does your user need to know to try your project?
 ---
+A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this:
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+1. Click&nbsp;**Use this template** on [GitHub](https://github.com/tomrcc/docsycannon-template).
+2. Select a name for your new project and click&nbsp;**Create repository from template**.
+3. <a rel="nofollow" href="https://app.cloudcannon.com/register?trial=cc_standard">Sign up</a>&nbsp;for CloudCannon using their free trial period.
+4. <a rel="nofollow" href="https://cloudcannon.com/community/learn/hugo-cms---get-started-with-cloudcannon/">Build your site</a>.
 
-Information in this section helps your user try your project themselves.
+Once you have a copy of the template live on CloudCannon, navigate to [CloudCannon's CMS](https://app.cloudcannon.com/editor) and edit the contents to suit your needs.
 
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
-
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
-
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
-
-## Prerequisites
-
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
-
-## Installation
-
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
-
-## Setup
-
-Is there any initial setup users need to do after installation to try your project?
-
-## Try it out!
-
-Can your users test their installation, for example by running a command or deploying a Hello World example?
+##
