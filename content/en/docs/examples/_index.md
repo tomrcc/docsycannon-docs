@@ -1,18 +1,14 @@
 ---
 _schema: index
-title: "Examples"
-linkTitle: "Examples"
+title: Content and Customisation
+linkTitle: Content and Customisation
 weight: 3
-tags: []
-categories: []
-description: >
-  See your project in action!
+tags:
+  - Content
+  - Customisation
+  - Editing
+categories:
+  - Content
+  - Customisation
+description: How to add content to and customise your DocsyCannon site.
 ---
-
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
-
-Do you have any example **applications** or **code** for your users in your repo or elsewhere? Link to your examples here.
-
-
