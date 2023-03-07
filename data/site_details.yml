@@ -32,7 +32,7 @@ user_interface:
 sidebar:
   collapsed_sidebar_title: Open
   collapsed_sidebar_icon_centered: false
-  sidebar_menu_foldable: true
+  sidebar_menu_foldable: false
   sidebar_search_disable: false
   sidebar_menu_compact: false
   sidebar_menu_truncate: 50
