@@ -12,7 +12,7 @@
 }
 </style>
 {{ end }}
-<section id="cover" class="row align-items-center td-cover-block td-cover-block--height-{{ $height }}{{ if not .Site.Data.navbar.navbar_translucent_over_cover_disable }} js-td-cover{{ end }} td-overlay td-overlay--dark -bg-{{ $col_id }}">
+<section id="cover" class="row td-cover-block td-cover-block--height-{{ $height }}{{ if not .Site.Data.navbar.navbar_translucent_over_cover_disable }} js-td-cover{{ end }} td-overlay td-overlay--dark -bg-{{ $col_id }}">
   <div class="container td-overlay__inner">
     <div class="row">
       <div class="col-12">
@@ -22,7 +22,7 @@
           {{ range .button }}
             {{ partial "bookshop" (slice "generic/button" . )}}
           {{ end }}
-          <div class="pt-3 lead">
+          <div class="my-4 lead">
             {{ if eq .Page.File.Ext "md" }}
             {{ .text | markdownify }}
             {{ else }}

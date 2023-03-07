@@ -1,3 +1,5 @@
+baseURL = "https://localhost"
+
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"

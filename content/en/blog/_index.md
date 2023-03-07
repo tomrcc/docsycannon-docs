@@ -3,7 +3,7 @@ title: Docsy Blog
 linkTitle: Blog
 menu:
   main:
-    weight: 30
+    weight: 40
 ---
 This is the **blog** section. It has two categories: News and Releases.
 

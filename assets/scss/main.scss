@@ -47,6 +47,16 @@ a {
     color: $links;
 }
 
+.display-1 {
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+
+    @media (min-width: 1200px) {
+        font-size: 5rem;
+    }
+}
+
 // Adjust anchors vs the fixed menu.
 @include media-breakpoint-up(md) {
     .td-offset-anchor:target {

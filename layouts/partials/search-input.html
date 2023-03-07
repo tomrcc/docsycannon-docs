@@ -4,26 +4,5 @@
   <input type="search" class="td-search__input form-control td-search-input" placeholder="{{ T "ui_search" }}" aria-label="{{ T "ui_search" }}" autocomplete="off">
 </div>
 {{ else if .Site.Data.site_details.search.algolia_docsearch -}}
-<div id="docsearch"></div>
-{{ else if .Site.Data.site_details.search.offlineSearch -}}
-{{ $offlineSearchIndex := resources.Get "json/offline-search-index.json" | resources.ExecuteAsTemplate "offline-search-index.json" . -}}
-{{ if hugo.IsProduction -}}
-{{/* Use `md5` as finger print hash function to shorten file name to avoid `file name too long` error. */ -}}
-{{ $offlineSearchIndex = $offlineSearchIndex | fingerprint "md5" -}}
-{{ end -}}
-{{ $offlineSearchLink := $offlineSearchIndex.RelPermalink -}}
-
-<div class="td-search td-search--offline">
-  <div class="td-search__icon"></div>
-  <input
-    type="search"
-    class="td-search__input form-control"
-    placeholder="{{ T "ui_search" }}"
-    aria-label="{{ T "ui_search" }}"
-    autocomplete="off"
-    data-offline-search-index-json-src="{{ $offlineSearchLink }}"
-    data-offline-search-base-href="/"
-    data-offline-search-max-results="{{ .Site.Data.site_details.search.offlineSearchMaxResults | default 10 }}"
-  >
-</div>
+  <div id="docsearch"></div>
 {{ end -}}
