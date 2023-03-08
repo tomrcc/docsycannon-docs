@@ -33,11 +33,13 @@ Enable Google Analytics by adding your project’s analytics ID to the site conf
 By default, Docsy uses the&nbsp;[gtag.js](https://support.google.com/analytics/answer/10220869)&nbsp;analytics library for both GA4 (which&nbsp;*requires*&nbsp;`gtag.js`) and Universal Analytics (UA) site tags. If you prefer using the older&nbsp;`analytics.js`&nbsp;library for your UA site tag, then set&nbsp;`params.disableGtagForUniversalAnalytics`&nbsp;to&nbsp;`true`&nbsp;in your project’s `config.toml`.
 
 ```toml
-**[**params**]**
-disableGtagForUniversalAnalytics **=** **true**
+[params]
+disableGtagForUniversalAnalytics = true
 ```
 
 {{< alert color="warning" title="Warning" >}}You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.{{< /alert >}}
+
+## {{< alert color="info" title="Production-only feature!" >}}Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following [discussion](www.example.com).{{< /alert >}}
 
 ## User Feedback
 
