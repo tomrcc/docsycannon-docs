@@ -26,18 +26,6 @@ You will need an&nbsp;**analytics ID**&nbsp;for your website before proceeding (
 
 {{< alert color="info" title="Tip" >}}Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).{{< /alert >}}
 
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Tip</p><p class="c-card__subtext">Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Tip</p><p class="c-card__subtext">Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Tip</p><p class="c-card__subtext">Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
 ### Setup
 
 Enable Google Analytics by adding your project’s analytics ID to the site configuration file. For details, see&nbsp;[Configure Google Analytics](https://gohugo.io/templates/internal/#configure-google-analytics).
@@ -50,32 +38,6 @@ disableGtagForUniversalAnalytics **=** **true**
 ```
 
 {{< alert color="warning" title="Warning" >}}You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.{{< /alert >}}
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Warning</p><p class="c-card__subtext">You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Warning</p><p class="c-card__subtext">You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Warning</p><p class="c-card__subtext">You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-{{< alert color="info" title="Production-only feature!" >}}Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.{{< /alert >}}
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Production-only feature!</p><p class="c-card__subtext">Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Production-only feature!</p><p class="c-card__subtext">Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Production-only feature!</p><p class="c-card__subtext">Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
 
 ## User Feedback
 
