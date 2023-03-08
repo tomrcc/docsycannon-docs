@@ -1,20 +1,15 @@
 ---
 _schema: default
-title: Navigation and Search
-linkTitle: Navigation and Search
+title: Navigation
+linkTitle: Navigation
 weight: 3
 description: |
-  Customize site navigation and search for your Docsy site.
+  Customize site navigation for your DocsyCannon site.
 categories:
   - Navigation
-  - Search
 tags:
   - Nav
   - Navigation
-  - Search
-  - GCSE
-  - Google Search
-  - Algolia
 ---
 ## Top-level menu
 
