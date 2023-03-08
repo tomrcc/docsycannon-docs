@@ -12,22 +12,20 @@ tags:
   - GCSE
   - Google Search
 ---
-## Site search options
-
 DocsyCannon offers multiple options that let your readers search your site content, so you can pick one that suits your needs. You can choose from:
 
 * [Google Custom Search Engine](https://programmablesearchengine.google.com/about/)&nbsp;(GCSE), the default option, which uses Google’s index of your public site to generate a search results page. This is an easy to set up option, all you need to do is add a GCSE ID and then set it up on the GCSE dashboard.
 * <a target="_blank" rel="noopener" href="https://docsearch.algolia.com/">Algolia DocSearch</a>, which uses Algolia’s indexing and search mechanism, and provides an organized dropdown of search results when your readers use the search box. Algolia DocSearch is free for public documentation sites. This is slightly more complex to add to your site and requires adding to the source code. Enter scripts for Algolia in&nbsp;`layouts/partials/hooks/body-end.html`&nbsp;and style sheets in&nbsp;`layouts/partials/hooks/head-end.html`.
 
-### Disabling the sidebar search box&nbsp;
+## Disabling the sidebar search box&nbsp;
 
 By default, the search box appears in both the top navigation bar and at the top of the sidebar left navigation pane. If you don’t want the sidebar search box, turn off Algolia DocSearch and remove any GCSE ID in Sidebar Settings section of the sites Data collection.
 
-### Configure search with a Google Custom Search Engine
+## Configure search with a Google Custom Search Engine
 
 To enable this feature, you’ll first need to make sure that you have built and deployed a production version of your site, as otherwise your site won’t be crawled and indexed.
 
-#### Setting up GCSE search
+### Setting up GCSE search
 
 1. Create a Google Custom Search Engine for your deployed site by clicking&nbsp;**New search engine**&nbsp;on the&nbsp;[Custom Search page](https://cse.google.com/cse/all)&nbsp;and following the instructions. Make a note of the ID for your new search engine.
 2. Add any further configuration you want to your search engine using the&nbsp;**Edit search engine**&nbsp;options. In particular you may want to do the following:
@@ -36,17 +34,17 @@ To enable this feature, you’ll first need to make sure that you have built and
 
 {{< alert color="info" title="Tip" >}}Your site search results should show up within a couple of days. If it takes longer than that, you can manually request that your site is indexed by submitting a sitemap through the Google Search Console.{{< /alert >}}
 
-### Configure Algolia DocSearch
+## Configure Algolia DocSearch
 
 As an alternative to GCSE, you can use&nbsp;[Algolia DocSearch](https://docsearch.algolia.com/)&nbsp;with this theme. Algolia DocSearch is free for public documentation sites. DocsyCannon supports Algolia DocSearch v3.
 
-#### Sign up for Algolia DocSearch
+### Sign up for Algolia DocSearch
 
 Complete the form at&nbsp;[https://docsearch.algolia.com/apply/](https://docsearch.algolia.com/apply/).
 
 If you are accepted to the program, you will receive the code to add to your documentation site from Algolia by email.
 
-#### Adding Algolia DocSearch
+### Adding Algolia DocSearch
 
 1. Enable Algolia DocSearch in the Search section of the sites Data collection.&nbsp; &nbsp;&nbsp;
 2. Disable the sidebar search in&nbsp;`hugo.toml`/`hugo.yaml`/`hugo.json`&nbsp;as this is not currently supported for Algolia DocSearch. See&nbsp;[Disabling the sidebar search box](https://www.docsy.dev/docs/adding-content/navigation/#disabling-the-sidebar-search-box).
