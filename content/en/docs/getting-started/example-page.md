@@ -9,7 +9,6 @@ categories:
   - Examples
   - Getting Started
 tags:
-  - Docs
   - Local Development
   - Docker
 ---
