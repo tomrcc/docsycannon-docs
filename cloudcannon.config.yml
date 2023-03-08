@@ -8,7 +8,7 @@ _editables: &md_editables
     format: p h3
     undo: true
     redo: true
-  content: &md_options
+  content:
     blockquote: true
     bold: true
     format: p h1 h2 h3 h4 h5 h6 pre address div
@@ -156,7 +156,6 @@ _snippets:
           editor_key: header
           optional: true
           remove_empty: true
-          type: string
         - source_key: title
           editor_key: title
           optional: true
@@ -193,7 +192,7 @@ _snippets:
         label: Card Content
         comment: The content of the card.
         type: markdown
-        options: *md_options
+        options: *md_editables
       header:
         label: Header
         comment: The card header.
