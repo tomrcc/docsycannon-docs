@@ -16,3 +16,122 @@ tags:
   - SEO
   - Google Analytics
 ---
+## Adding Analytics
+
+The DocsyCannon theme builds upon&nbsp;[Hugo’s support for Google Analytics](https://gohugo.io/templates/internal/#google-analytics), which Hugo provides through&nbsp;[internal templates](https://gohugo.io/templates/internal/). Once you set up analytics as described below, usage information for your site (such as page views) is sent to your&nbsp;[Google Analytics](https://analytics.google.com/analytics/web/)&nbsp;account.
+
+### Prerequisites
+
+You will need an&nbsp;**analytics ID**&nbsp;for your website before proceeding (technically it’s called a measurement ID or property ID but we’ll use the term “analytics ID” in this guide). If you don’t have one, see the&nbsp;**How to get started**&nbsp;section of&nbsp;[Introducing Google Analytics 4 (GA4)](https://support.google.com/analytics/answer/1042508).
+
+{{< alert color="info" title="Tip" >}}Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).{{< /alert >}}
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Tip</p><p class="c-card__subtext">Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Tip</p><p class="c-card__subtext">Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Tip</p><p class="c-card__subtext">Your project’s analytics ID is a string that starts with G- (a GA4 measurement ID) or UA- (a universal analytics property ID).</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+### Setup
+
+Enable Google Analytics by adding your project’s analytics ID to the site configuration file. For details, see&nbsp;[Configure Google Analytics](https://gohugo.io/templates/internal/#configure-google-analytics).
+
+By default, Docsy uses the&nbsp;[gtag.js](https://support.google.com/analytics/answer/10220869)&nbsp;analytics library for both GA4 (which&nbsp;*requires*&nbsp;`gtag.js`) and Universal Analytics (UA) site tags. If you prefer using the older&nbsp;`analytics.js`&nbsp;library for your UA site tag, then set&nbsp;`params.disableGtagForUniversalAnalytics`&nbsp;to&nbsp;`true`&nbsp;in your project’s `config.toml`.
+
+```toml
+**[**params**]**
+disableGtagForUniversalAnalytics **=** **true**
+```
+
+{{< alert color="warning" title="Warning" >}}You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.{{< /alert >}}
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Warning</p><p class="c-card__subtext">You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Warning</p><p class="c-card__subtext">You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Warning</p><p class="c-card__subtext">You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+{{< alert color="info" title="Production-only feature!" >}}Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.{{< /alert >}}
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Production-only feature!</p><p class="c-card__subtext">Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Production-only feature!</p><p class="c-card__subtext">Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:warning" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text ">Production-only feature!</p><p class="c-card__subtext">Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following discussion.</p></div></div></div></div>
+
+<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
+
+## User Feedback
+
+By default Docsy puts a “was this page helpful?” feedback widget at the bottom of every documentation page,
+
+### How is this data useful?
+
+When you have a lot of documentation, and not enough time to update it all, you can use the “was this page helpful?” feedback data to help you decide which pages to prioritize. In general, start with the pages with a lot of pageviews and low ratings. “Low ratings” in this context means the pages where users are clicking&nbsp;**No**&nbsp;— the page wasn’t helpful — more often than&nbsp;**Yes**&nbsp;— the page was helpful. You can also study your highly-rated pages to develop hypotheses around why your users find them helpful.
+
+In general, you can develop more certainty around what patterns your users find helpful or unhelpful if you introduce isolated changes in your documentation whenever possible. For example, suppose that you find a tutorial that no longer matches the product. You update the instructions, check back in a month, and the score has improved. You now have a correlation between up-to-date instructions and higher ratings. Or, suppose you study your highly-rated pages and discover that they all start with code samples. You find 10 other pages with their code samples at the bottom, move the samples to the top, and discover that each page’s score has improved. Since this was the only change you introduced on each page, it’s more reasonable to believe that your users find code samples at the top of pages helpful. The scientific method, applied to technical writing, in other words!
+
+### Setup
+
+1. Open the Feedback section of the Data collection in CloudCannon.
+2. Ensure that Google Analytics is enabled, as described above.
+3. Set the response text and link that users see after clicking&nbsp;**Yes**&nbsp;or&nbsp;**No**.
+
+### Access the feedback data
+
+This section assumes basic familiarity with Google Analytics. For example, you should know how to check page views over a certain time range and navigate between accounts if you have access to multiple documentation sites.
+
+1. Open Google Analytics.
+2. Open&nbsp;**Behavior**&nbsp;&gt;&nbsp;**Events**&nbsp;&gt;&nbsp;**Overview**.
+3. In the&nbsp;**Event Category**&nbsp;table click the&nbsp;**Helpful**&nbsp;row. Click&nbsp;**view full report**&nbsp;if you don’t see the&nbsp;**Helpful**&nbsp;row.
+4. Click&nbsp;**Event Label**. You now have a page-by-page breakdown of ratings.
+
+Here’s what the 4 columns represent:
+
+* **Total Events**&nbsp;is the total number of times that users clicked&nbsp;*either*&nbsp;**Yes**&nbsp;or&nbsp;**No**.
+* **Unique Events**&nbsp;provides a rough indication of how frequently users are rating your pages per session. For example, suppose your&nbsp;**Total Events**&nbsp;is 5000, and&nbsp;**Unique Events**&nbsp;is 2500. This means that you have 2500 users who are rating 2 pages per session.
+* **Event Value**&nbsp;isn’t that useful.
+* **Avg. Value**&nbsp;is the aggregated rating for that page. The value is always between 0 and 1. When users click&nbsp;**No**&nbsp;a value of 0 is sent to Google Analytics. When users click&nbsp;**Yes**&nbsp;a value of 1 is sent. You can think of it as a percentage. If a page has an&nbsp;**Avg. Value**&nbsp;of 0.67, it means that 67% of users clicked&nbsp;**Yes**&nbsp;and 33% clicked&nbsp;**No**.
+
+The underlying Google Analytics infrastructure that stores the “was this page helpful?” data is called&nbsp;[Events](https://developers.google.com/analytics/devguides/collection/analyticsjs/events). &nbsp;It’s just a&nbsp;`click`&nbsp;event listener that fires the Google Analytics JavaScript function for logging an Event, disables the&nbsp;**Yes**&nbsp;and&nbsp;**No**&nbsp;buttons, and shows the response text.
+
+## Add a contact form with Fabform
+
+You can create a contact form for your site and collect your form submissions at&nbsp;[fabform.io](https://fabform.io/). To use this feature, you first need to sign up for an account with Fabform. The following example shows how to add a simple form that collects the user’s email address to your site source:
+
+<div><pre data-language="html"><code class="language-html"><strong>&lt;</strong><strong>form</strong> action<strong>=</strong>"https://fabform.io/f/{form-id}" method<strong>=</strong>"post"<strong>&gt;</strong>
+ <strong>&lt;</strong><strong>label</strong> for<strong>=</strong>"email"<strong>&gt;</strong>Your Email<strong>&lt;/</strong><strong>label</strong><strong>&gt;</strong>
+ <strong>&lt;</strong><strong>input</strong> name<strong>=</strong>"email" type<strong>=</strong>"email"<strong>&gt;</strong>
+ <strong>&lt;</strong><strong>button</strong> type<strong>=</strong>"submit"<strong>&gt;</strong>Submit<strong>&lt;/</strong><strong>button</strong><strong>&gt;</strong>
+<strong>&lt;/</strong><strong>form</strong><strong>&gt;</strong>
+</code></pre></div>
+
+For more details, see&nbsp;[Add a Hugo contact form](https://fabform.io/a/hugo-contact-form)&nbsp;in the Fabform documentation.
+
+## Search Engine Optimization meta tags
+
+To learn how to optimize your site for SEO see,&nbsp;[Search Engine Optimization (SEO) Starter Guide](https://developers.google.com/search/docs/beginner/seo-starter-guide).
+
+Google&nbsp;[recommends](https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=en%2F#descriptionmeta)&nbsp;using the&nbsp;`description`&nbsp;meta tag to tell search engines what your page is about. For each generated page, Docsy will set the content of the meta&nbsp;`description`&nbsp;by using the first of the following that is defined:
+
+* The page's&nbsp;`description`&nbsp;field
+* For non-index pages, the page&nbsp;[summary](https://gohugo.io/content-management/summaries/), as computed by Hugo
+* The site description taken from the&nbsp;[site&nbsp;`params`](https://gohugo.io/variables/site/#the-siteparams-variable)
+
+Add more meta tags as needed to your project’s copy of the&nbsp;`head-end.html`&nbsp;partial.
