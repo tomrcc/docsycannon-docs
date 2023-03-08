@@ -152,7 +152,8 @@ _snippets:
       shortcode_name: card
       content_key: message
       named_args:
-        - editor_key: header
+        - source_key: header
+          editor_key: header
           optional: true
           remove_empty: true
         - source_key: title
