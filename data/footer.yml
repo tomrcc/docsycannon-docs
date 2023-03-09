@@ -1,7 +1,7 @@
 copyright: The Docsy Author
 privacy_policy: https://policies.google.com/privacy
 footer_about_disable: false
-links:
+footer_links:
   user:
     - name: User mailing list
       url: 'https://example.org/mail'
