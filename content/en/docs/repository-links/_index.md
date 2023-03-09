@@ -34,25 +34,17 @@ There are four variables you can configure in&nbsp;`hugo.toml`/`hugo.yaml`/`hugo
 
 The URL for your site’s source repository. This is used to generate the&nbsp;**Edit this page**,&nbsp;**Create child page**, and&nbsp;**Create documentation issue**&nbsp;links.​​​​​
 
-<div><div><div> </div></div></div>
-
 ## GitHub subdirectory
 
 Specify a value here if your content directory is not in your repo’s root directory. For example, this site if your site is in the&nbsp;`userguide`&nbsp;subdirectory (folder) of its repo. Setting this value means that your edit links will go to the right page.
-
-<div><div><div> </div></div></div>
 
 ## GitHub project repository
 
 Specify a value here if you have a separate project repo and you’d like your users to be able to create issues against your project from the relevant docs. The&nbsp;**Create project issue**&nbsp;link appears only if this is set.
 
-<div><div><div> </div></div></div>
-
 ## GitHub branch
 
 Specify a value here if you have would like to reference a different branch for the other GitHub settings like&nbsp;**Edit this page**&nbsp;or&nbsp;**Create project issue**.
-
-<div><div><div> </div></div></div>
 
 ## Path base for GitHub subdirectory
 
@@ -91,7 +83,7 @@ If you’d like users to create project issues in the originating repo as well, 
 
 <div><div><div> </div></div></div>
 
-<div><h4>Tip</h4><p>Please note that the YAML code fragment makes use of&nbsp;<a href="https://support.atlassian.com/bitbucket-cloud/docs/yaml-anchors/">Yaml anchor</a>. Use of Yaml anchors is optional, but it helps keep the settings&nbsp;<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>.</p></div>
+<div><p>{{< alert color="info" title="Tip" >}}Please note that the YAML code fragment makes use of Yaml anchor. Use of Yaml anchors is optional, but it helps keep the settings DRY.{{< /alert >}}</p></div>
 
 The&nbsp;`path_base_for_github_subdir`&nbsp;setting is a regular expression, so you can use it even if you have a site with&nbsp;[multiple languages](https://www.docsy.dev/docs/language/)&nbsp;for example:
 
