@@ -39,6 +39,8 @@ disableGtagForUniversalAnalytics = true
 
 {{< alert color="warning" title="Warning" >}}You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.{{< /alert >}}
 
+{{< alert color="info" title="Production-only feature!" >}}Analytics are enabled only for production builds (called “environments” in Hugo terminology). For information about Hugo environments and how to set them, see the following [discussion](www.example.com).{{< /alert >}}
+
 ## User Feedback
 
 By default Docsy puts a “was this page helpful?” feedback widget at the bottom of every documentation page,
