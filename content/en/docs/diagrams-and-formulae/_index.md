@@ -3,16 +3,18 @@ _schema: index
 title: Diagrams and Formulae
 linkTitle: Diagrams and Formulae
 weight: 8
-description:
-categories: []
-tags: []
+description: Coming Soon to DocsyCannon!
+categories:
+  - Diagrams
+  - Formulae
+tags:
+  - Diagrams
+  - Formulae
+  - Scientific Notation
 math: true
 ---
-```mathematica
-When **\\**(a **\ne** 0**\\**), there are two solutions to **\\**(ax^2 + bx + c= 0**\\**) and they are **\\**(x = {-b **\pm** **\sqrt**{b^2-4ac} **\over** 2a}**\\**).
-```
-
 ```math
 When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c= 0\\) and they are \\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\\).
 ```
-{{< highlight "mathematica" >}}When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c= 0\\) and they are \\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\\).{{< /highlight >}}
+
+We are working on this feature and hope to provide it in future versions of DocsyCannon!
