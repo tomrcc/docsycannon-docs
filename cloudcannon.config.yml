@@ -747,7 +747,7 @@ collections_config:
         comment: Enable feedback for your content pages.
       enable:
         label: Enable Feedback
-        comment: Turn on to enable feedback buttons at the bottom of content pages.
+        comment: Turn on to enable feedback buttons at the bottom of content pages. Used in conjunction with Google Analytics.
         type: switch
       yes_message:
         label: Yes Message

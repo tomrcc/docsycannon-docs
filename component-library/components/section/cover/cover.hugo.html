@@ -1,14 +1,14 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-{{ $promo_image := .background_image }}
+{{ $background_image := .background_image }}
 {{ $logo_image := .logo_image }}
 {{ $col_id := .col_id | default "dark" }}
 {{/* Height can be one of: auto, min, med, max, full. */}}
 {{ $height := .height| default "max" }}
 {{ $byline := .byline| default "" }}
-{{ with $promo_image }}
+{{ with $background_image }}
 <style>
 #cover {
-    background-image: url({{ $promo_image }}); 
+    background-image: url({{ $background_image }});
 }
 </style>
 {{ end }}
