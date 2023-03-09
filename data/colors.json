@@ -1,7 +1,7 @@
 {
   "primary": "#034ad8",
   "secondary": "#b5a5f5",
-  "success": "#6d95f7",
+  "success": "#76f191",
   "info": "#c0d1e0",
   "warning": "#ed6a5a",
   "danger": "#ff1c00",
@@ -11,6 +11,6 @@
   "blue": "#408eff",
   "orange": "#ffbfa3",
   "gray": "#e2e4e6",
-  "black": "#3f0b0b",
-  "links": "#02056a"
+  "black": "#070912",
+  "links": "#448fff"
 }
