@@ -24,11 +24,11 @@ The DocsyCannon docs and blog layouts include links for readers to edit the page
 
 This page shows you how to configure these links.
 
-Currently, Docsy supports only GitHub repository links “out of the box”. Since GitLab can handle the same link scheme, it should work as well. If you are using another repository such as Bitbucket and would like generated repository links, feel free to&nbsp;[add a feature request or update our theme](https://www.docsy.dev/docs/contribution-guidelines/).
+Currently, DocsyCannon supports only GitHub repository links “out of the box”. Since GitLab can handle the same link scheme, it should work as well. If you are using another repository such as Bitbucket and would like generated repository links, feel free to&nbsp;[add a feature request or update our theme](https://www.docsy.dev/docs/contribution-guidelines/).
 
-##
+## Link configuration
 
-##
+There are four variables you can configure in&nbsp;`hugo.toml`/`hugo.yaml`/`hugo.json`&nbsp;to set up links, as well as one in your page metadata.
 
 ## GitHub repository
 
@@ -69,8 +69,6 @@ Suppose that the source files for all of the pages under&nbsp;`content/some-sect
 </u>---
 ```
 
-<div><div><div> </div></div></div>
-
 As an example, consider a page at the path&nbsp;`content/some-section/subpath/some-page.md`&nbsp;with&nbsp;`github_branch`&nbsp;globally set to&nbsp;`main`. The index page settings above will generate the following edit link for&nbsp;`some-page.md`\:
 
 ```nocode
@@ -91,11 +89,9 @@ If you’d like users to create project issues in the originating repo as well, 
 </u>---
 ```
 
-<div> </div>
-
 <div><div><div> </div></div></div>
 
-<div><h4>Tip</h4><p>Please note that the YAML code fragment makes use of&nbsp;<a href="https://support.atlassian.com/bitbucket-cloud/docs/yaml-anchors/">Yaml anchor</a>. Use of Yaml anchors is optional, but it helps keep the settings&nbsp;<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>.</p><p>{{< alert color="info" title="Tip" >}}Please note that the YAML code fragment makes use of Yaml anchor. Use of Yaml anchors is optional, but it helps keep the settings DRY.{{< /alert >}}</p></div>
+<div><h4>Tip</h4><p>Please note that the YAML code fragment makes use of&nbsp;<a href="https://support.atlassian.com/bitbucket-cloud/docs/yaml-anchors/">Yaml anchor</a>. Use of Yaml anchors is optional, but it helps keep the settings&nbsp;<a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>.</p></div>
 
 The&nbsp;`path_base_for_github_subdir`&nbsp;setting is a regular expression, so you can use it even if you have a site with&nbsp;[multiple languages](https://www.docsy.dev/docs/language/)&nbsp;for example:
 
@@ -107,11 +103,9 @@ The&nbsp;`path_base_for_github_subdir`&nbsp;setting is a regular expression, so 
 </u>---
 ```
 
-<div><div><div> </div></div></div>
+<div><div><div>In situations where a page originates from a file under a different name, you can specify&nbsp;<code>from</code>&nbsp;and&nbsp;<code>to</code>&nbsp;path-rename settings. Here’s an example where an index file is named&nbsp;<code>README.md</code>&nbsp;in the originating repo:</div><div> </div></div></div>
 
-In situations where a page originates from a file under a different name, you can specify&nbsp;`from`&nbsp;and&nbsp;`to`&nbsp;path-rename settings. Here’s an example where an index file is named&nbsp;`README.md`&nbsp;in the originating repo:
-
-<div><div> </div><div><div><div><div><pre data-language="yaml"><code class="language-yaml">---<u>
+<div><div><div><div><div><pre data-language="yaml"><code class="language-yaml">---<u>
 </u>…<u>
 </u><strong>github_repo</strong><strong>:</strong><u> </u>https://github.com/some-username/another-repo/<u>
 </u><strong>github_subdir</strong><strong>:</strong><u> </u>docs<u>
