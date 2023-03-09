@@ -25,6 +25,6 @@
   "dependencies": {
     "@bookshop/browser": "3.3.3",
     "@bookshop/generate": "3.3.3",
-    "@bookshop/hugo-engine": "3.3.3"
+    "@bookshop/hugo-engine": "3.4.0"
   }
 }
