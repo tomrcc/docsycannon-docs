@@ -45,9 +45,8 @@ With the following example you define a additional taxonomy&nbsp;`projects`&nbsp
   </u><strong>tag</strong><strong>:</strong><u> </u>tags<u>
 </u><u>  </u><strong>category</strong><strong>:</strong><u> </u>categories<u>
 </u><u>  </u><strong>project</strong><strong>:</strong><u> </u>projects</code>
-</pre></div></div></div>
 
-<div><div><div> </div></div></div>
+</pre></div></div></div>
 
 ## Multi language support for taxonomies
 
