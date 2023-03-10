@@ -14,7 +14,7 @@
             {{ partial "sidebar.html" . }}
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
-            {{ if not .Site.Data.site_details.user_interface.page_meta_links_disabled }}
+            {{ if not .Site.Data.user_interface.page_meta_links_disabled }}
               {{ partial "page-meta-links.html" . }}
             {{ end }}
             {{ partial "toc.html" . }}

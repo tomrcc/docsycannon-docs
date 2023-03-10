@@ -19,10 +19,10 @@
 <button class="btn btn-primary mb-4 feedback--answer feedback--answer-yes">Yes</button>
 <button class="btn btn-primary mb-4 feedback--answer feedback--answer-no">No</button>
 <p class="feedback--response feedback--response-yes">
-  {{ .Site.Data.site_details.user_interface.feedback.yes_message | markdownify }}
+  {{ .Site.Data.user_interface.feedback.yes_message | markdownify }}
 </p>
 <p class="feedback--response feedback--response-no">
-  {{ .Site.Data.site_details.user_interface.feedback.no_message | markdownify }}
+  {{ .Site.Data.user_interface.feedback.no_message | markdownify }}
 </p>
 </div>
 <script>

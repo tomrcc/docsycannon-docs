@@ -1,0 +1,7 @@
+collapsed_sidebar_title:
+collapsed_sidebar_icon_centered: false
+sidebar_menu_foldable: true
+sidebar_search_disable: false
+sidebar_menu_compact: false
+sidebar_menu_truncate: 50
+sidebar_cache_limit: 2000

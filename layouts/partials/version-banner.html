@@ -1,9 +1,9 @@
 <!-- Check the variable that indicates whether this is an archived doc set.
   If yes, display a banner. -->
-  {{ if .Site.Data.site_details.versions.archived_version }}
+  {{ if .Site.Data.versioning.archived_version }}
   {{ $color := "primary" }}
-  {{ $latest_version := .Site.Data.site_details.versions.url_latest_version }}
-  {{ $current_version := .Site.Data.site_details.versions.current_version }}
+  {{ $latest_version := .Site.Data.versioning.url_latest_version }}
+  {{ $current_version := .Site.Data.versioning.current_version }}
   <div class="pageinfo pageinfo-{{ $color }}">
     {{ with $current_version }}<p>Version {{ . | markdownify }} of the
       documentation is no longer actively maintained. The site that you are

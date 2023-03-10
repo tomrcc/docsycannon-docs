@@ -1,10 +1,10 @@
 {{ if .File }}
 {{ $pathFormatted := replace .File.Path "\\" "/" -}}
-{{ $gh_repo := (.Site.Data.site_details.github.github_repo) -}}
-{{ $gh_url := (.Site.Data.site_details.github.github_url) -}}
-{{ $gh_subdir := (.Site.Data.site_details.github.github_subdir) -}}
-{{ $gh_project_repo := (.Site.Data.site_details.github.github_project_repo) -}}
-{{ $gh_branch := (default "main" (.Site.Data.site_details.github.github_branch)) -}}
+{{ $gh_repo := (.Site.Data.github.github_repo) -}}
+{{ $gh_url := (.Site.Data.github.github_url) -}}
+{{ $gh_subdir := (.Site.Data.github.github_subdir) -}}
+{{ $gh_project_repo := (.Site.Data.github.github_project_repo) -}}
+{{ $gh_branch := (default "main" (.Site.Data.github.github_branch)) -}}
 <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
 {{ if $gh_url -}}
   {{ warnf "Warning: use of `github_url` is deprecated. For details see https://www.docsy.dev/docs/adding-content/repository-links/#github_url-optional" -}}
