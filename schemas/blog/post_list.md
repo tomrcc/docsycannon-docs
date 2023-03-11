@@ -1,5 +1,6 @@
 ---
-title: 
+title:
 linkTitle:
+description:
 weight:
 ---

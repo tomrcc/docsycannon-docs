@@ -1,8 +1,8 @@
 ---
 title:
 linkTitle:
+description:
+weight:
 date:
 author:
-weight:
-description:
 ---

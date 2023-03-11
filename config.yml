@@ -1,3 +1,6 @@
+title: DocsyCannon template
+description: A technical documentation site template
+
 # So that 'hugo serve' has the correct prefix
 baseURL: 'https://localhost'
 
@@ -13,11 +16,10 @@ enableMissingTranslationPlaceholders: true
 enableRobotsTXT: true
 
 # Language configuration
-# Important to have enabled for SEO purposes
 languages:
   en:
     title: DocsyCannon
-    description: The DocsyCannon docs (en)
+    description: A technical documentation site
     languageName: English
     weight: 1
 #   'no':
@@ -52,7 +54,7 @@ params:
     taxonomyCloudTitle:
       - Tag Cloud
       - Categories
-# set taxonomyPageHeader = [] to hide taxonomies on the page headers
+# set taxonomyPageHeader: [] to hide taxonomies on the page headers
     taxonomyPageHeader:
       - tags
       - categories
@@ -71,7 +73,7 @@ markup:
     # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
     style: tango
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
-    # guessSyntax = "true"
+    # guessSyntax: "true"
 
 # Configure how URLs look like per section.
 permalinks:
@@ -92,8 +94,8 @@ services:
 outputs:
   section:
     - HTML
+    - print
     - RSS
-  #   - print
 
 
 module:
