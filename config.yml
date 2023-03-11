@@ -1,3 +1,4 @@
+# So that 'hugo serve' has the correct prefix
 baseURL: 'https://localhost'
 
 # Will give values to .Lastmod etc.
@@ -12,12 +13,13 @@ enableMissingTranslationPlaceholders: true
 enableRobotsTXT: true
 
 # Language configuration
-# languages:
-#   en:
-#     title: Goldydocs
-#     description: A Docsy example site
-#     languageName: English
-#     weight: 1
+# Important to have enabled for SEO purposes
+languages:
+  en:
+    title: DocsyCannon
+    description: The DocsyCannon docs (en)
+    languageName: English
+    weight: 1
 #   'no':
 #     title: Goldydocs
 #     description: Docsy er operativsystem for skyen
@@ -90,8 +92,8 @@ services:
 outputs:
   section:
     - HTML
-    - print
     - RSS
+  #   - print
 
 
 module:
