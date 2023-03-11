@@ -2,6 +2,7 @@
 _schema: home
 title: Documentation
 linkTitle: Documentation
+description: The documentation section of the DocsyCannon Docs
 menu:
   main:
     weight: 20

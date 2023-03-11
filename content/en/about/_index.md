@@ -2,6 +2,7 @@
 _schema: default
 title: About
 linkTitle: About
+description: About DocsyCannon docs
 menu:
   main:
     weight: 1
