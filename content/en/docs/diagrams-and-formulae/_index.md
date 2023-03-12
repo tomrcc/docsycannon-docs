@@ -2,8 +2,8 @@
 _schema: index
 title: Diagrams and Formulae
 linkTitle: Diagrams and Formulae
+description: How to use Latex and Katex in DocsyCAnnon
 weight: 8
-description: Coming Soon to DocsyCannon!
 categories:
   - Diagrams
   - Formulae
@@ -11,10 +11,23 @@ tags:
   - Diagrams
   - Formulae
   - Scientific Notation
-math: true
+  - Chemistry
+  - Mathematics
 ---
+
+The probability of getting \\(k\\) heads when flipping \\(n\\) coins is:
 ```math
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c= 0\\) and they are \\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\\).
+\tag*{(1)} P(E) = {n \choose k} p^k (1-p)^{n-k}
 ```
 
-We are working on this feature and hope to provide it in future versions of DocsyCannon!
+*Precipitation of barium sulfate:* \\(\ce{SO4^2- + Ba^2+ -> BaSO4 v}\\)
+* Scientific number notation: \\(\pu{1.2e3 kJ}\\) or \\(\pu{1.2E3 kJ}\\) \\
+* Divisions: \\(\pu{123 kJ/mol}\\) or \\(\pu{123 kJ//mol}\\)
+
+$\ce{x Na(NH4)HPO4 ->[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}$
+
+$\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}$
+
+$\ce{Hg^2+ ->[I-]  $\underset{\mathrm{red}}{\ce{HgI2}}$  ->[I-]  $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}$
+
+
