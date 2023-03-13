@@ -2,8 +2,8 @@
 _schema: default
 title: Adding Content
 linkTitle: Adding Content
-weight: 1
 description: Add different types of content to your DocsyCannon site
+weight: 1
 categories:
   - Content
   - Customisation
@@ -17,7 +17,9 @@ tags:
 * Documentation is for pages in your site’s Documentation section.
 * Blog is for pages in your site’s Blog.
 
-These two sections are meant for the main content of your site. They come with pre-made navigation to their various subpages.&nbsp;<br><br>Other pages on the site are more flexible and are built using components available in CloudCannon [Bookshop](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc). The template comes with pre-made components for you to edit and create pages, but also the ability to create new components and tailor your page building experience even further.
+These two sections are meant for the main content of your site. They come with pre-made navigation to their various subpages. To edit these pages with a text editor, navigate to the content editor in CloudCannon via the dropdown in the top toolbar.
+
+<img src="/screenshot-2023-03-13-at-7-54-58-pm.png" width="772" height="128" /><br><br>Other pages on the site are more flexible and are built using components available in CloudCannon [Bookshop](https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc). The template comes with pre-made components for you to edit and create pages, but also the ability to create new components and tailor your page building experience even further.
 
 ## Creating new pages
 {{% pageinfo color="primary" %}}You cannot create more than one blog section or documentation section.{{% /pageinfo %}}

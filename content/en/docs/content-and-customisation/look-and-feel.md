@@ -2,18 +2,19 @@
 _schema: default
 title: Look and Feel
 linkTitle: Look and Feel
-weight: 2
 description: Customise colors, fonts and more for your site.
+weight: 2
 categories:
   - Customisation
-  -
 tags:
   - Customisation
   - Editing
+  - Colors
+  - Navbar
 ---
 ## Colors
 
-Colors for the site can be easily changed in the colors section of the Data collection.<br><br>More color options can be added if you have developer experience by updating `_variables.scss` and&nbsp;`fetch-color.js` in the source code, following the format already there for the existing color options, and rebuilding in CloudCannon, or running&nbsp;`npm start `locally.
+Colors for the site can be easily changed in the colors section of the Data collection.<br><br>If you have developer experience, more color options can be added by updating `_variables.scss` and&nbsp;`fetch-color.js` in the source code. Follow the format already there for the existing color options, and rebuild in CloudCannon, or run&nbsp;`npm start`&nbsp;locally.
 
 ## Navbar
 
