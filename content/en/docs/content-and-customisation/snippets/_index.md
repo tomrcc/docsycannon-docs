@@ -8,21 +8,51 @@ categories: []
 description: |
   A list of helpful snippets to reuse throughout your markdown.
 ---
-## Snippets/Shortcodes
+Snippets, also known in Hugo as shortcodes are small reusable pieces of code that you can include throughout your content.<br><br>Here are some of the ones you can use in DocsyCannon:
 
-Snippets, also known in Hugo as shortcodes are small reusable pieces of code that you can include in your markdown files.<br><br>Here are some of the ones you can use in Docsy:
+### Code Highlighting
+
+Used to format code and provide syntax highlighting. You can change the theme
+
+```javascript
+const javascriptVariable = "A string"
+console.log(javascriptVariable);
+// A string
+```
+{{< highlight "jsx" >}}import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}{{< /highlight >}}
 
 ### Page Info
 
-Used to display important information about the page.
+Used to set a banner with a colored border.
 
 {{% pageinfo color="primary" %}}This is some information about the page{{% /pageinfo %}}
 
 ### Alert
 
-Used to grab the users attention, and alert them to something important.
+Used to grab the users attention, and alert them to something important. Has a heading and a colored border.
 
-{{< alert color="danger" title="An alert" >}}To display some important information{{< /alert >}}
+{{< alert color="info" title="Tip" >}}An important tip{{< /alert >}}
+
+{{< alert color="danger" title="Warning" >}}To display some important information{{< /alert >}}
 
 ### Cards
 
@@ -49,7 +79,7 @@ console.log(string);
 
 A way to display tabbed information. Tabs must be used within a tab pane. Tabs can be plain text, or code depending on which option is selected in Tab Pane. Tabs automatically detect which language to be highlighted through each Tabs header if the appropriate fields are selected in the parent Tab Pane. Has the ability to disable individual tabs, so they can be used as a label.
 
-{{< tabpane text=false right=true langEqualsHeader=true persistLang=false >}}{{< tab header="Languages:" disabled=true >}}{{< /tab >}}
+{{< tabpane text=false right=false langEqualsHeader=true persistLang=false >}}{{< tab header="Languages:" disabled=true >}}{{< /tab >}}
 {{< tab header="HTML" lang="HTML" disabled=false >}}```html
 
 <h1>Code Highlighting in Tabs</h1>
