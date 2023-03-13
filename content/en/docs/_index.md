@@ -7,4 +7,4 @@ menu:
   main:
     weight: 20
 ---
-This is the technical documentation for DocsyCannon - the Docsy template for [Hugo](https://gohugo.io/), configured for use in CloudCannon.&nbsp;<br><br>DocsyCannon uses CloudCannon's Content Management System to provide a way to build Documentation sites without needing to touch any code. However, if you have developer experience or work in a team of developers and editors, you can further customise your page building/ documentation writing to suit your needs.
+This is the technical documentation for DocsyCannon. DocsyCannon is a fork of Docsy, a&nbsp;[Hugo](https://gohugo.io/)&nbsp;theme, meant to help build a documentation website. Docsy gives users a skeleton theme (template) to fill out with their own documentation content. DocsyCannon is Docsy, configured for use in CloudCannon. CloudCannon's Content Management System (CMS) allows editors to build websites without touching any code, while providing the freedom for developers to be able to customise that editing experience.
