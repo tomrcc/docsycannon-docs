@@ -30,11 +30,11 @@ You will need an **analytics ID** for your website before proceeding (technicall
 
 Enable Google Analytics by adding your project’s analytics ID to the site configuration file. For details, see [Configure Google Analytics](https://gohugo.io/templates/internal/#configure-google-analytics).
 
-By default, Docsy uses the [gtag.js](https://support.google.com/analytics/answer/10220869) analytics library for both GA4 (which *requires* `gtag.js`) and Universal Analytics (UA) site tags. If you prefer using the older `analytics.js` library for your UA site tag, then set `params.disableGtagForUniversalAnalytics` to `true` in your project’s `config.toml`.
+By default, DocsyCannon uses the [gtag.js](https://support.google.com/analytics/answer/10220869) analytics library for both GA4 (which *requires* `gtag.js`) and Universal Analytics (UA) site tags. If you prefer using the older `analytics.js` library for your UA site tag, then set `params.disableGtagForUniversalAnalytics` to `true` in your project’s `config.ymal`.
 
-```toml
-[params]
-disableGtagForUniversalAnalytics = true
+```yaml
+params:
+  disableGtagForUniversalAnalytics: true
 ```
 
 {{< alert color="warning" title="Warning" >}}You can configure your project’s analytics ID by setting either the top-level googleAnalytics config parameter or services.googleAnalytics.id. Do not define both, otherwise this can result in unexpected behavior. For details, see Is services.googleAnalytics.id an alias for googleAnalytics.{{< /alert >}}
@@ -43,7 +43,7 @@ disableGtagForUniversalAnalytics = true
 
 ## User Feedback
 
-By default Docsy puts a “was this page helpful?” feedback widget at the bottom of every documentation page,
+By default DocsyCannon puts a “was this page helpful?” feedback widget at the bottom of every documentation page. If you would like to disable it, you can in the User Interface section of the Data collection.
 
 ### How is this data useful?
 
@@ -77,7 +77,7 @@ The underlying Google Analytics infrastructure that stores the “was this page 
 
 ## Add a contact form with Fabform
 
-You can create a contact form for your site and collect your form submissions at [fabform.io](https://fabform.io/). To use this feature, you first need to sign up for an account with Fabform. The following example shows how to add a simple form that collects the user’s email address to your site source:
+You can create a contact form for your site and collect your form submissions at [fabform.io](https://fabform.io/). To use this feature, you first need to sign up for an account with Fabform. <a target="_blank" rel="noopener" href="https://github.com/CloudCannon/bookshop/blob/main/guides/hugo.adoc#authoring-new-components">Create a new component</a> in Bookshop to create a form like the example below:
 
 <div><pre data-language="html"><code class="language-html"><strong>&lt;</strong><strong>form</strong> action<strong>=</strong>"https://fabform.io/f/{form-id}" method<strong>=</strong>"post"<strong>&gt;</strong>
  <strong>&lt;</strong><strong>label</strong> for<strong>=</strong>"email"<strong>&gt;</strong>Your Email<strong>&lt;/</strong><strong>label</strong><strong>&gt;</strong>
