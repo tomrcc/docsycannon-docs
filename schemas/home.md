@@ -1,6 +1,5 @@
 ---
-menu:
-  main:
-    weight:
+title:
+description:
 content_blocks:
 ---
