@@ -2,8 +2,8 @@
 _schema: default
 title: Versioning
 linkTitle: Versioning
-weight: 5
 description: Customise navigation and banners for multiple versions of your docs.
+weight: 5
 categories:
   - Versioning
 tags:
@@ -14,7 +14,7 @@ Depending on your project’s releases and versioning, you may want to let your 
 
 ## Adding a version drop-down menu
 
-If you add some&nbsp;`versions`&nbsp;in the Versioning section of the sites Data collection, the DocsyCannon theme adds a version selector drop down to the top-level menu. You specify a URL and a name for each version you would like to add to the menu, as in the following example:
+If you add more than one version in&nbsp;`versions`&nbsp;in the Versioning section of the sites Data collection, the DocsyCannon theme adds a version selector drop down to the top-level menu. You specify a URL and a name for each version you would like to add to the menu, as in the following example:
 
 ```
   version = "master"
@@ -27,8 +27,6 @@ If you add some&nbsp;`versions`&nbsp;in the Versioning section of the sites Data
 Remember to add your current version so that users can navigate back!
 
 The default title for the version drop-down menu is&nbsp;**Releases**. To change the title, change the&nbsp;`version_menu`&nbsp;field in Versioning section of the sites Data collection.
-
-<div><div><div> </div></div></div>
 
 If you set the&nbsp;`version_menu_pagelinks`&nbsp;field to&nbsp;`true`, then links in the version drop-down menu point to the current page in the other version, instead of the main page. This can be useful if the document doesn’t change much between the different versions. Note that if the current page doesn’t exist in the other version, the link will be broken.
 
