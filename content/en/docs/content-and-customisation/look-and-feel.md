@@ -11,6 +11,7 @@ tags:
   - Editing
   - Colors
   - Navbar
+  - Code Highlighting
 ---
 ## Colors
 
@@ -25,3 +26,19 @@ After the hero image has scrolled past the navbar, the navbar’s (opaque) backg
 The text of navbar entries can be difficult to read with some hero images. In these cases, you can disable navbar translucency by setting the&nbsp;`translucent_over_cover_disable`&nbsp;option to&nbsp;`true`&nbsp;in your site’s Data collection.
 
 By default the navbar does not display your logo in the top left. To enable a logo navigate to the Navbar section of your sites Data file, turn on `Navbar Logo` and ensure the correct path to your logo image is entered.
+
+## Code Highlighting
+
+You can change the default style for code highlighting by going to your config.yaml and changing the style from `tango` like shown below:
+
+```yaml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
+    style: tango
+    # Uncomment if you want your chosen highlight style used for code blocks without a specified language
+    # guessSyntax: "true"
+```
